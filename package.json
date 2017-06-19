@@ -1,6 +1,6 @@
 {
-"scripts": {
-  "start": "webpack-dev-server --inline"
+  "scripts": {
+    "start": "webpack-dev-server --inline"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -11,6 +11,8 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-    "preact": "^8.1.0"
+    "linkstate": "^1.0.1",
+    "preact": "^8.1.0",
+    "react-link-state": "^0.1.2"
   }
 }
