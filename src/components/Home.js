@@ -12,7 +12,7 @@ export default function Home() {
 			<p>Enter a GitHub Username</p>
 			<br />
 			<p>
-			<input type="serch"
+			<input  type="search"
 					placeholder="eg: vinosgrayapple"
 					onSearch={e => search(e.target.value)}
 					/>

@@ -2,7 +2,7 @@ import { h, Component } from 'preact';
 import User from './User';
 
 export class Profile extends Component {
-	constructor() {
+	constructor(props) {
 		super(props);
 		this.state = {
 			user: null,
