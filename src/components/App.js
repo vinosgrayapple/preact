@@ -1,16 +1,20 @@
 import { h,Component } from 'preact';
-import linkState from 'linkstate';
+import { Router } from 'preact-router';
+import Home from './Home';
+import Profile from './Profile';
 // import linkState from 'react-link-state';
 
 export class App extends Component  {
-	render(props, { text = '' }) {
+	render() {
 		return (
-	<div>			
-		<input type="text" value={text} onInput={linkState(this, 'text')}/>
-		<pre><code>{JSON.stringify(this.state, null, 2)}</code></pre>
+	<div class="app">
+		<Router>
+			<Home path="/" />
+			<Profile path="/profile/:user" />
+		</Router>
 	</div>
 
-			)
+			);
 	}
 	
 }
